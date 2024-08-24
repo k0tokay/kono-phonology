@@ -1,10 +1,8 @@
 import json
-from pathlib import Path
 from word import *
 import numpy as np
 
-path = Path(__file__).parent.parent / "dict" / "saimeno-v4.json"
-with open(path) as f:
+with open("dict/saimeno-v4.json") as f:
     data = json.load(f)
 
 not_syl_res = []

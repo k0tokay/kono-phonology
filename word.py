@@ -3,9 +3,10 @@ import re
 import functools
 
 class Word:
-    def __init__(self, text, sys=std_sys):
+    def __init__(self, text, sys=std_sys, alert=False):
         self.text = text
         self.sys = sys
+        self.alert = alert
         self.ph = re.findall("|".join(sys.ph["X"]), text)
         self.cal_group()
 
@@ -22,16 +23,16 @@ class Word:
             return "|".join([x+y for x,y in self.sys.res[label]])
         ans = []
         def rec(text):
-            for c1, v, c2 in itertools.product([res_str("c1"), C_str], [res_str("v"), V_str], [C_str, res_str("c2")]):
-                syl = re.match(f'({c1})?({v})({c2})?', text)
-                if syl:
+            for c1, v, c2 in itertools.product([res_str("c1"), C_str, ""], [res_str("v"), V_str], ["", C_str, res_str("c2")]):
+                syl = re.match(f'({c1})({v})({c2})', text)
+                if syl and (rec(text[syl.span()[1]:]) or syl.group() == text):
                     ans.append(syl.group())
-                    rec(text[syl.span()[1]:])
                     return True
             return False
         self.syl_res = rec(self.text)
+        ans = ans[::-1]
         self.syl_group = [re.findall("|".join(self.sys.ph["X"]), x) for x in ans]
-        if not self.syl_res:
+        if not self.syl_res and self.alert:
             print(f"{self.text} : 制約違反 - 音節")
 
     # 母音結合
