@@ -1,26 +1,52 @@
 import json
+import numpy as np
 from word import *
-import markovify
+
+# N-gramマルコフモデル
+# N >= 2
+N = 3
 
 with open("dict/saimeno-v4.json") as f:
     data = json.load(f)
 
-words = [Word(w["entry"]["form"]) for w in data["words"]]
-text = "\n".join([" ".join(w.ph) + " .."[i%3] for i, w in enumerate(words)])
-#text = "\n".join([" ".join(["".join(v) for v in w.syl_group]) + " ." for w in words])
+words = [["BOS"] * (N-1) + Word(w["entry"]["form"]).ph + ["EOS"] * (N-1) for w in data["words"]]
 
-text_model = markovify.Text(text, state_size=2)
+X = std_sys.ph["X"] + ["BOS", "EOS"]
+inv = lambda X : {x : X.index(x) for x in X}
+# X^nの場合
+inv_n = lambda X, n, x : np.sum([inv(X)[x[i]] * len(X) ** i for i in range(n)])
+L = len(X)
+invX = inv(X)
+invXN = lambda x: inv_n(X, N-1, x)
+to_N_gram = lambda w : [w[i:i+N] for i in range(len(w)-N+1)]
+N_grams = list(map(to_N_gram, words))
+
+A = np.zeros((L ** (N-1), L))
+# Nが大きすぎるとAが死ぬ
+
+for w in N_grams:
+    for wi in w:
+        A[invXN(wi[:-1])][invX[wi[-1]]] += 1
+
+A_sum = np.sum(A, axis=1, keepdims=True)
+A /= np.where(A_sum != 0, A_sum, 1) # 0除算よけ
+
+# with open("markov.json", "w") as f:
+#     json.dump(A.tolist(), f, indent=2)
 
 generated = []
-for _ in range(3):
-    ans = text_model.make_sentence() # なぜかくそ長い．なにこれ．
-    if ans != None:
-        ans = ans.replace(" ", "").split(".")
-        generated += ans
+for _ in range(500):
+    w = ["BOS"] * (N-1)
+    next = "BOS"
+    while next != "EOS":
+        tail = invXN(w[1-N:])
+        next = np.random.choice(X, p=A[tail])
+        w.append(next)
+    w = Word("".join(w[N-1:-1]))
+    if w.is_valid and len(w.ph) >= 4 and w.text not in data["words"]:
+        generated.append(w.text)
 
-generated = filter(lambda x: len(x) >= 4, generated)
-generated = list(set(generated) - set(words))
-generated = filter(lambda x: Word(x).syl_res, generated)
+generated = list(set(generated)) # 一意化
 
 with open("generated/samples01.txt", "w") as f:
     f.write("\n".join(generated))
