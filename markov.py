@@ -48,5 +48,5 @@ for _ in range(500):
 
 generated = list(set(generated)) # 一意化
 
-with open("generated/samples01.txt", "w") as f:
+with open("generated/markov01.txt", "w") as f:
     f.write("\n".join(generated))
