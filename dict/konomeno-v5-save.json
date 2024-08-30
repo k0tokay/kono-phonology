@@ -1,0 +1,39 @@
+{
+  "0": {
+    "entry": "[概念]",
+    "children": [
+      4
+    ],
+    "tags": [],
+    "contents": []
+  },
+  "1": {
+    "entry": "[関係]",
+    "children": [],
+    "tags": [],
+    "contents": []
+  },
+  "2": {
+    "entry": "[パラメータ演算子]",
+    "children": [],
+    "tags": [],
+    "contents": []
+  },
+  "3": {
+    "entry": "[音節]",
+    "children": [],
+    "tags": [],
+    "contents": []
+  },
+  "4": {
+    "entry": "alkono",
+    "translations": [
+      "概念"
+    ],
+    "parent": 0,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  }
+}
