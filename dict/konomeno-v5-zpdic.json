@@ -1,0 +1,52 @@
+{
+  "words": [
+    {
+      "entry": {
+        "id": 4,
+        "form": "alkono"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "概念"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 5,
+        "form": "san"
+      },
+      "translations": [
+        {
+          "title": "パラメータ演算子",
+          "forms": [
+            "全ての"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    }
+  ],
+  "zpdic": {
+    "punctuations": [
+      ",",
+      "、",
+      "，"
+    ],
+    "pronunciationTitle": "Pronunciation"
+  },
+  "zpdicOnline": {
+    "enableMarkdown": false
+  },
+  "version": 2
+}

@@ -4,6 +4,7 @@ from tkinter import ttk
 
 dict_path = "dict/konomeno-v5.json"
 dict_save_path = "dict/konomeno-v5-save.json"
+dict_zpdic_path = "dict/konomeno-v5-zpdic.json"
 # JSONデータの読み込み
 with open(dict_path) as f:
     data = json.load(f)
@@ -83,8 +84,9 @@ fields = [
 
 def insert_items(parent, id):
     node = tree.insert(parent, 'end', text=fields[3][0](id), values=(fields[3][1](id), fields[3][2](id)))
-    for id in data[str(id)]['children']:
-        insert_items(node, id)
+    if "children" in data[str(id)]:
+        for id in data[str(id)]['children']:
+            insert_items(node, id)
 
 c_num = 4
 for id in range(c_num):
@@ -312,3 +314,63 @@ root.bind("<Control-f>", lambda event: search_window(main_frame))
 
 # メインループの実行
 root.mainloop()
+
+# zpdicへの変換
+def to_zpdic():
+    # JSON ファイルの仕様
+    # https://zpdic.ziphil.com/document/other/json-spec
+    zpdic = {
+        "words" : [],
+        "zpdic" : {
+            "punctuations" : [",","、","，"],
+            "pronunciationTitle" : "Pronunciation"},
+            "zpdicOnline":{"enableMarkdown" : False
+        },
+        "version" : 2
+    }
+    words = []
+    id_form = lambda id: {
+        "id": id,
+        "form": data[str(id)]["entry"]
+    }
+    for id, w in data.items():
+        id = int(id)
+        if id < c_num:
+            continue
+        word = {}
+        word["entry"] = id_form(id)
+        word["translations"] = [{ 
+            "title" : data[str(category(id))]["entry"][1:-1],
+            "forms": w["translations"]
+        }]
+        word["tags"] = w["tags"]
+        word["contents"] = w["contents"]
+        word["variations"] = w["variations"]
+        word["relations"] = []
+        pid = w["parent"]
+        if pid >= c_num:
+            r = {
+                "title": "上位語",
+                "entry": id_form(pid)
+            }
+            word["relations"].append(r)
+        if "children" in w:
+            for cid in w["children"]:
+                r = {
+                    "title": "下位語",
+                    "entry": id_form(cid)
+                }
+                word["relations"].append(r)
+        if "arguments" in w:
+            for i, aid in enumerate(w["arguments"]):
+                r = {
+                    "title": f"第{i}項",
+                    "entry": id_form(aid)
+                }
+                word["relations"].append(r)
+        words.append(word)
+    zpdic["words"] = words
+    return zpdic
+
+with open(dict_zpdic_path, "w") as f:
+    json.dump(to_zpdic(), f, ensure_ascii=False, indent=2)

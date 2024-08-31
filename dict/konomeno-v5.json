@@ -15,7 +15,9 @@
   },
   "2": {
     "entry": "[パラメータ演算子]",
-    "children": [],
+    "children": [
+      5
+    ],
     "tags": [],
     "contents": []
   },
@@ -33,6 +35,16 @@
     "parent": 0,
     "children": [],
     "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "5": {
+    "entry": "san",
+    "translations": [
+      "全ての"
+    ],
+    "tags": [],
+    "parent": 2,
     "contents": [],
     "variations": []
   }
