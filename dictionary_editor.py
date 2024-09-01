@@ -38,7 +38,8 @@ fields = [
         "parent",
         "children",
         "tags",
-        "arguments"
+        "arguments",
+        "function"
     ], [
         "単語",
         "ID",
@@ -46,23 +47,26 @@ fields = [
         "上位語",
         "下位語",
         "タグ",
-        "項"
+        "項",
+        "関数"
     ], [
-        [True, True, True, True, True],
-        [True, True, True, True, True],
-        [False, True, True, True, True],
-        [False, True, True, False, False],
-        [True, True, True, False, False],
-        [True, True, True, True, True],
-        [False, False, True, False, False]
+        [True, True, True, True, True, True, True],
+        [True, True, True, True, True, True, True],
+        [False, True, True, True, True, True, True],
+        [False, True, True, True, True, True, True],
+        [True, True, True, False, False, False, False],
+        [True, True, True, True, True, True, True],
+        [False, False, True, True, False, False, False],
+        [False, False, True, True, False, False, False],
     ], [
         lambda id: data[str(id)]["entry"],
         lambda id: str(id),
         lambda id: "，".join(data[str(id)]["translations"]) if "translations" in data[str(id)] else "",
-        lambda id: data[str(id)]["parent"] if "parent" in data[str(id)] else "",
+        lambda id: str(data[str(id)]["parent"]) if "parent" in data[str(id)] else "",
         lambda id: "，".join(map(str, data[str(id)]["children"])) if "children" in data[str(id)] else "",
         lambda id: "，".join(data[str(id)]["tags"]) if "tags" in data[str(id)] else "",
-        lambda id: "，".join(map(str, data[str(id)]["arguments"])) if "arguments" in data[str(id)] else ""
+        lambda id: "，".join(map(str, data[str(id)]["arguments"])) if "arguments" in data[str(id)] else "",
+        lambda id: str(data[str(id)]["function"])
     ], [
         lambda text: text,
         lambda text: -1 if text == "" else int(text),
@@ -70,13 +74,15 @@ fields = [
         lambda text: -1 if text == "" else int(text),
         lambda text: [] if text == "" else list(map(int, text.split("，"))),
         lambda text: [] if text == "" else text.split("，"),
-        lambda text: [] if text == "" else list(map(int, text.split("，")))
+        lambda text: [] if text == "" else list(map(int, text.split("，"))),
+        lambda text: 0 if text == "" else int(text)
     ], [
         True,
         False,
         True,
+        True,
         False,
-        False,
+        True,
         True,
         True
     ]
@@ -88,7 +94,7 @@ def insert_items(parent, id):
         for id in data[str(id)]['children']:
             insert_items(node, id)
 
-c_num = 4
+c_num = 6
 for id in range(c_num):
     insert_items("", id)
 
@@ -259,7 +265,8 @@ def delete_element(node):
             for cid in data[str(id)]["children"]:
                 data[str(cid)]["parent"] = new_pid
                 data[str(new_pid)]["children"].append(cid)
-                tree.insert(getitem(pid), "end", text=data[str(cid)]["entry"], values=(cid, "，".join(data[str(cid)]["translations"])))
+                insert_items(getitem(pid), cid)
+        tree.delete(*tree.get_children(node))
         tree.delete(node)
         data.pop(str(id))
         popup.destroy()
@@ -278,10 +285,18 @@ def edit_element(entries):
     id = int(entries["1"].get())
     item = getitem(id)
     for i in entries:
+        text = entries[i].get()
+        if i == "3":
+            pid = data[str(id)]["parent"]
+            new_pid = int(text)
+            data[str(pid)]["children"].remove(id)
+            data[str(new_pid)]["children"].append(id)
         if i != "1":
-            text = entries[i].get()
             data[str(id)][fields[0][int(i)]] = fields[4][int(i)](text)
-    tree.item(item, text=entries["0"].get(), values=(entries["1"].get(), entries["2"].get() if "2" in entries else ""))
+    tree.delete(*tree.get_children(item))
+    tree.delete(item)
+    insert_items(getitem(new_pid), id)
+    # tree.item(item, text=entries["0"].get(), values=(entries["1"].get(), entries["2"].get() if "2" in entries else ""))
 
 # ダブルクリックで編集
 # def edit_on_click(event):
@@ -362,10 +377,20 @@ def to_zpdic():
                 }
                 word["relations"].append(r)
         if "arguments" in w:
-            for i, aid in enumerate(w["arguments"]):
+            if w["function"] == 1:
+                w_arg = w["arguments"][:-1]
+            else:
+                w_arg = w["arguments"]
+            for i, aid in enumerate(w_arg):
                 r = {
-                    "title": f"第{i}項",
+                    "title": f"第{i+1}項",
                     "entry": id_form(aid)
+                }
+                word["relations"].append(r)
+            if w["function"] == 1:
+                r = {
+                    "title": "出力",
+                    "entry": id_form(w["arguments"][-1])
                 }
                 word["relations"].append(r)
         words.append(word)

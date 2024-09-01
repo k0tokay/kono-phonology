@@ -11,3 +11,5 @@ for i, w in enumerate(data["words"]):
     not_valid.append(not w.is_valid)
 
 print(f"総数 : {np.sum(not_valid)}")
+
+print(Word("stoit").dotplus(Word("lis")).text)

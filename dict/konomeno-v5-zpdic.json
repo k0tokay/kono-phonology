@@ -2,7 +2,7 @@
   "words": [
     {
       "entry": {
-        "id": 4,
+        "id": 6,
         "form": "alkono"
       },
       "translations": [
@@ -16,11 +16,40 @@
       "tags": [],
       "contents": [],
       "variations": [],
-      "relations": []
+      "relations": [
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 8,
+            "form": "panhac"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 9,
+            "form": "astav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 10,
+            "form": "selovna"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 11,
+            "form": "loka"
+          }
+        }
+      ]
     },
     {
       "entry": {
-        "id": 5,
+        "id": 7,
         "form": "san"
       },
       "translations": [
@@ -35,6 +64,4785 @@
       "contents": [],
       "variations": [],
       "relations": []
+    },
+    {
+      "entry": {
+        "id": 8,
+        "form": "panhac"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "広義持続物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 13,
+            "form": "aicis"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 9,
+        "form": "astav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "生起物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 104,
+            "form": "sankonstav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 106,
+            "form": "sankalastav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 10,
+        "form": "selovna"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "時間関連"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 123,
+            "form": "selov"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 124,
+            "form": "selovfon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 11,
+        "form": "loka"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "抽象物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 59,
+            "form": "fonne"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 100,
+            "form": "haik"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 135,
+            "form": "kilemma"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 12,
+        "form": "nato"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "持続物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 8,
+            "form": "panhac"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 14,
+            "form": "noflem"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 13,
+        "form": "aicis"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "従属物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 8,
+            "form": "panhac"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 32,
+            "form": "latent"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 33,
+            "form": "canon"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 34,
+            "form": "haikant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 14,
+        "form": "noflem"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "統合体"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 16,
+            "form": "santakto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 17,
+            "form": "klant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 15,
+        "form": "matonakt"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "定量物質"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 42,
+            "form": "kelen"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 43,
+            "form": "kisa"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 105,
+            "form": "magnom"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 141,
+            "form": "hoft"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 16,
+        "form": "santakto"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "広義オブジェクト"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 14,
+            "form": "noflem"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 18,
+            "form": "takto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 19,
+            "form": "kommaton"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 17,
+        "form": "klant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "集合体"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 14,
+            "form": "noflem"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 133,
+            "form": "kagle"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 134,
+            "form": "koloca"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 18,
+        "form": "takto"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "オブジェクト"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 16,
+            "form": "santakto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 20,
+            "form": "kaeno"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 21,
+            "form": "kinano"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 19,
+        "form": "kommaton"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "単位物質"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 16,
+            "form": "santakto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 129,
+            "form": "fleneko"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 20,
+        "form": "kaeno"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "エージェント"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 18,
+            "form": "takto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 22,
+            "form": "konkaeno"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 23,
+            "form": "calfkaeno"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 21,
+        "form": "kinano"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "機能物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 18,
+            "form": "takto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 24,
+            "form": "kines"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 25,
+            "form": "novzmi"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 22,
+        "form": "konkaeno"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "単一エージェント"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 20,
+            "form": "kaeno"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 47,
+            "form": "halov"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 23,
+        "form": "calfkaeno"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "複合エージェント"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 20,
+            "form": "kaeno"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 87,
+            "form": "kuistent"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 88,
+            "form": "cotent"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 24,
+        "form": "kines"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "人工物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 21,
+            "form": "kinano"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 26,
+            "form": "kilemkto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 27,
+            "form": "latakto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 25,
+        "form": "novzmi"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "生体部品"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 21,
+            "form": "kinano"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 51,
+            "form": "bafnant"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 52,
+            "form": "kwafnant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 26,
+        "form": "kilemkto"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "表現物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 24,
+            "form": "kines"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 27,
+        "form": "latakto"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "非表現物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 24,
+            "form": "kines"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 75,
+            "form": "suiston"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 76,
+            "form": "laitces"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 77,
+            "form": "mosto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 78,
+            "form": "melisbon"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 80,
+            "form": "folka"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 28,
+        "form": "kon"
+      },
+      "translations": [
+        {
+          "title": "パラメータ演算子",
+          "forms": [
+            "ある何かの"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 29,
+        "form": "hanov"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "部分性関係",
+            "部分-全体関係",
+            "x1はx2の物理的部分である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 30,
+        "form": "hanem"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "構成員関係",
+            "構成員-集合体関係",
+            "x1はx2の構成員である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 14,
+            "form": "noflem"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 17,
+            "form": "klant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 31,
+        "form": "litam"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "内部関係",
+            "内部-全体関係",
+            "x1はx2の中にある"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 14,
+            "form": "noflem"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 16,
+            "form": "santakto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 32,
+        "form": "latent"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "量"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 13,
+            "form": "aicis"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 35,
+            "form": "nosnant"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 36,
+            "form": "lekostent"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 33,
+        "form": "canon"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "性質"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 13,
+            "form": "aicis"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 34,
+        "form": "haikant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "特徴"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 13,
+            "form": "aicis"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 37,
+            "form": "lolokac"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 38,
+            "form": "fenant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 35,
+        "form": "nosnant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "定性的量"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 32,
+            "form": "latent"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 93,
+            "form": "kanowa"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 36,
+        "form": "lekostent"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "定量的量"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 32,
+            "form": "latent"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 56,
+            "form": "stoit"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 37,
+        "form": "lolokac"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "パターン"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 34,
+            "form": "haikant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 38,
+        "form": "fenant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "領域"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 34,
+            "form": "haikant"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 142,
+            "form": "sainem"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 144,
+            "form": "kant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 39,
+        "form": "saitona"
+      },
+      "translations": [
+        {
+          "title": "慣用表現",
+          "forms": [
+            "こんにちは"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 40,
+        "form": "aitos"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "2項関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 29,
+            "form": "hanov"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 30,
+            "form": "hanem"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 31,
+            "form": "litam"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 44,
+            "form": "造語待ち"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 45,
+            "form": "liimes"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 46,
+            "form": "sammes"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 54,
+            "form": "ansa"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 92,
+            "form": "koplis"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 95,
+            "form": "noccea"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 94,
+            "form": "lofna"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 96,
+            "form": "nila"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 97,
+            "form": "nilof"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 98,
+            "form": "noclof"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 99,
+            "form": "fetam"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 103,
+            "form": "lihaik"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 91,
+            "form": "造語待ち"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 118,
+            "form": "tov"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 113,
+            "form": "hanimist"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 41,
+        "form": "saitona"
+      },
+      "translations": [
+        {
+          "title": "慣用表現",
+          "forms": [
+            "こんにちは"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 42,
+        "form": "kelen"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "ガラス"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 43,
+        "form": "kisa"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "水"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 44,
+        "form": "造語待ち"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "助数詞"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 19,
+            "form": "kommaton"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 45,
+        "form": "liimes"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "順序関係",
+            "小-大関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 46,
+        "form": "sammes"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "降順の順序関係",
+            "大-小関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 47,
+        "form": "halov"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "生物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 22,
+            "form": "konkaeno"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 48,
+            "form": "kwaflaim"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 49,
+            "form": "bafnol"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 48,
+        "form": "kwaflaim"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "植物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 47,
+            "form": "halov"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 49,
+        "form": "bafnol"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "動物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 47,
+            "form": "halov"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 50,
+            "form": "coto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 89,
+            "form": "meacc"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 50,
+        "form": "coto"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "人"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 49,
+            "form": "bafnol"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 51,
+        "form": "bafnant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "動物部分"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 25,
+            "form": "novzmi"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 70,
+            "form": "motonant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 52,
+        "form": "kwafnant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "植物部分"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 25,
+            "form": "novzmi"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 53,
+            "form": "nome"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 53,
+        "form": "nome"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "果実",
+            "果物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 52,
+            "form": "kwafnant"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 69,
+            "form": "kalam"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 73,
+            "form": "mikam"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 74,
+            "form": "lamynom"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 54,
+        "form": "ansa"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "内在関係",
+            "x2はx1を持つ",
+            "x1はx2に内在する"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 55,
+            "form": "stoitlis"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 36,
+            "form": "lekostent"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 55,
+        "form": "stoitlis"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "長さ",
+            "x2の長さはx1である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 54,
+            "form": "ansa"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 57,
+            "form": "motoilis"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 56,
+            "form": "stoit"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 56,
+        "form": "stoit"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "長さ量"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 36,
+            "form": "lekostent"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 57,
+        "form": "motoilis"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "高さ",
+            "x2の高さはx1である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 55,
+            "form": "stoitlis"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 58,
+            "form": "stalmota"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 56,
+            "form": "stoit"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 58,
+        "form": "stalmota"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "身長",
+            "x2の身長はx1である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 57,
+            "form": "motoilis"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 56,
+            "form": "stoit"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 50,
+            "form": "coto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 59,
+        "form": "fonne"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "集合",
+            "数学的対象"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 11,
+            "form": "loka"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 60,
+        "form": "laccen"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 59,
+            "form": "fonne"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 61,
+            "form": "mistakk"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 62,
+            "form": "stakk"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 63,
+            "form": "flakk"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 64,
+            "form": "tolas"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 65,
+            "form": "klanlas"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 66,
+            "form": "listakk"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 67,
+            "form": "tostakk"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 68,
+            "form": "helas"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 61,
+        "form": "mistakk"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "自然数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 62,
+        "form": "stakk"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "整数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 63,
+        "form": "flakk"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "有理数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 64,
+        "form": "tolas"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "実数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 65,
+        "form": "klanlas"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "複素数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 66,
+        "form": "listakk"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "順序数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 67,
+        "form": "tostakk"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "基数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 68,
+        "form": "helas"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "二重数"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 60,
+            "form": "laccen"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 69,
+        "form": "kalam"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "りんご"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 53,
+            "form": "nome"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 70,
+        "form": "motonant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "人体"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 51,
+            "form": "bafnant"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 71,
+            "form": "macylam"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 72,
+            "form": "mysto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 71,
+        "form": "macylam"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "筋肉"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 70,
+            "form": "motonant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 72,
+        "form": "mysto"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "骨"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 70,
+            "form": "motonant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 73,
+        "form": "mikam"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "みかん"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 53,
+            "form": "nome"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 74,
+        "form": "lamynom"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "さくらんぼ"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 53,
+            "form": "nome"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 75,
+        "form": "suiston"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "文房具"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 27,
+            "form": "latakto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 81,
+            "form": "suinof"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 82,
+            "form": "litof"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 83,
+            "form": "mokos"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 84,
+            "form": "stoesuy"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 76,
+        "form": "laitces"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "乗り物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 27,
+            "form": "latakto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 77,
+        "form": "mosto"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "建物"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 27,
+            "form": "latakto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 78,
+        "form": "melisbon"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "服装"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 27,
+            "form": "latakto"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 79,
+            "form": "falsa"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 79,
+        "form": "falsa"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "ズボン"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 78,
+            "form": "melisbon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 80,
+        "form": "folka"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "容器"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 27,
+            "form": "latakto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 81,
+        "form": "suinof"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "ノート"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 75,
+            "form": "suiston"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 82,
+        "form": "litof"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "鉛筆",
+            "ペン"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 75,
+            "form": "suiston"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 85,
+            "form": "flalif"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 86,
+            "form": "kelenlif"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 83,
+        "form": "mokos"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "消しゴム"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 75,
+            "form": "suiston"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 84,
+        "form": "stoesuy"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "定規"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 75,
+            "form": "suiston"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 85,
+        "form": "flalif"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "羽ペン"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 82,
+            "form": "litof"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 86,
+        "form": "kelenlif"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "ガラスペン"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 82,
+            "form": "litof"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 87,
+        "form": "kuistent"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "学校"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 23,
+            "form": "calfkaeno"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 88,
+        "form": "cotent"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "店"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 23,
+            "form": "calfkaeno"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 145,
+            "form": "cotaltces"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 89,
+        "form": "meacc"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "猫"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 49,
+            "form": "bafnol"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 90,
+        "form": "kuistnac"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "学生",
+            "x2はx1の学生である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 91,
+            "form": "造語待ち"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 87,
+            "form": "kuistent"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 50,
+            "form": "coto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 91,
+        "form": "造語待ち"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "ロール関係",
+            "コンテキスト-プレイヤー関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 90,
+            "form": "kuistnac"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 119,
+            "form": "antalto"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 92,
+        "form": "koplis"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "中身-容器関係",
+            "x1はx2の中身である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 80,
+            "form": "folka"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 93,
+        "form": "kanowa"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "可愛い",
+            "尊い"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 35,
+            "form": "nosnant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 94,
+        "form": "lofna"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "形容関係",
+            "x2はx1を持つ"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 35,
+            "form": "nosnant"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 33,
+            "form": "canon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 95,
+        "form": "noccea"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "物-性質関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 33,
+            "form": "canon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 96,
+        "form": "nila"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "定量的量-性質関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 35,
+            "form": "nosnant"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 33,
+            "form": "canon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 97,
+        "form": "nilof"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "定性的量-性質関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 35,
+            "form": "nosnant"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 33,
+            "form": "canon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 98,
+        "form": "noclof"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "性質-性質関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 33,
+            "form": "canon"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 33,
+            "form": "canon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 99,
+        "form": "fetam"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "間内部関係",
+            "間内部-全体関係",
+            "x1はx2の中にある"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 14,
+            "form": "noflem"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 17,
+            "form": "klant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 100,
+        "form": "haik"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "形"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 11,
+            "form": "loka"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 101,
+            "form": "suylis"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 101,
+        "form": "suylis"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "文字",
+            "サイン",
+            "標識"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 100,
+            "form": "haik"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 102,
+            "form": "maliitasuy"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 102,
+        "form": "maliitasuy"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "マリータスユ"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 101,
+            "form": "suylis"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 103,
+        "form": "lihaik"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "形状関係",
+            "x2の形はx1である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 100,
+            "form": "haik"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 8,
+            "form": "panhac"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 104,
+        "form": "sankonstav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "広義状態"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 9,
+            "form": "astav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 109,
+            "form": "konstav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 110,
+            "form": "saistav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 105,
+        "form": "magnom"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "牛乳"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 106,
+        "form": "sankalastav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "イベント"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 9,
+            "form": "astav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 107,
+            "form": "kalastav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 108,
+            "form": "milistav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 107,
+        "form": "kalastav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "完遂"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 106,
+            "form": "sankalastav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 108,
+        "form": "milistav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "達成"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 106,
+            "form": "sankalastav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 109,
+        "form": "konstav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "状態"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 104,
+            "form": "sankonstav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 110,
+        "form": "saistav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "プロセス"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 104,
+            "form": "sankonstav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 111,
+            "form": "flanov"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 112,
+            "form": "kosaistav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 111,
+        "form": "flanov"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "集合プロセス"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 110,
+            "form": "saistav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 112,
+        "form": "kosaistav"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "単一プロセス"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 110,
+            "form": "saistav"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 117,
+            "form": "liskono"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 113,
+        "form": "hanimist"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "生起物の構成員関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 108,
+            "form": "milistav"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 111,
+            "form": "flanov"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 114,
+        "form": "metokist"
+      },
+      "translations": [
+        {
+          "title": "高階関係",
+          "forms": [
+            "引き下げ関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 116,
+            "form": "tosfon"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 116,
+            "form": "tosfon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 115,
+        "form": "konofon"
+      },
+      "translations": [
+        {
+          "title": "高階関係",
+          "forms": [
+            "概念クラス"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 116,
+        "form": "tosfon"
+      },
+      "translations": [
+        {
+          "title": "高階関係",
+          "forms": [
+            "関係クラス"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 117,
+        "form": "liskono"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "変化行為"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 112,
+            "form": "kosaistav"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 118,
+        "form": "tov"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "所在関係",
+            "x1はx2にある"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 40,
+            "form": "aitos"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 12,
+            "form": "nato"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 34,
+            "form": "haikant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 119,
+        "form": "antalto"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "友達",
+            "x2はx1の友達である"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 91,
+            "form": "造語待ち"
+          }
+        },
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 50,
+            "form": "coto"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 50,
+            "form": "coto"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 120,
+        "form": "luitos"
+      },
+      "translations": [
+        {
+          "title": "関係",
+          "forms": [
+            "3項関係"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "第1項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "第2項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        },
+        {
+          "title": "第3項",
+          "entry": {
+            "id": 6,
+            "form": "alkono"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 121,
+        "form": "fante"
+      },
+      "translations": [
+        {
+          "title": "パラメータ演算子",
+          "forms": [
+            "ほとんど"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 122,
+        "form": "kojafante"
+      },
+      "translations": [
+        {
+          "title": "パラメータ演算子",
+          "forms": [
+            "ある程度多くの"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": []
+    },
+    {
+      "entry": {
+        "id": 123,
+        "form": "selov"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "時点"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 10,
+            "form": "selovna"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 125,
+            "form": "kans"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 124,
+        "form": "selovfon"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "時区間"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 10,
+            "form": "selovna"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 126,
+            "form": "nos"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 127,
+            "form": "culos"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 128,
+            "form": "fanlos"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 140,
+            "form": "malos"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 125,
+        "form": "kans"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "今",
+            "現在"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 123,
+            "form": "selov"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 126,
+        "form": "nos"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "日"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 124,
+            "form": "selovfon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 127,
+        "form": "culos"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "週"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 124,
+            "form": "selovfon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 128,
+        "form": "fanlos"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "月"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 124,
+            "form": "selovfon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 129,
+        "form": "fleneko"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "天体"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 19,
+            "form": "kommaton"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 130,
+            "form": "pan"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 131,
+            "form": "klovne"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 132,
+            "form": "sele"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 130,
+        "form": "pan"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "太陽"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 129,
+            "form": "fleneko"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 131,
+        "form": "klovne"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "月"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 129,
+            "form": "fleneko"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 132,
+        "form": "sele"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "星"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 129,
+            "form": "fleneko"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 133,
+        "form": "kagle"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "森"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 17,
+            "form": "klant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 134,
+        "form": "koloca"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "米"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 17,
+            "form": "klant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 135,
+        "form": "kilemma"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "表現関連"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 11,
+            "form": "loka"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 136,
+            "form": "kilemhaik"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 139,
+            "form": "kilem"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 136,
+        "form": "kilemhaik"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "表現形態"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 135,
+            "form": "kilemma"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 137,
+            "form": "saimeno"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 137,
+        "form": "saimeno"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "言語"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 136,
+            "form": "kilemhaik"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 138,
+            "form": "Konomeno"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 138,
+        "form": "Konomeno"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "コノメノ"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 137,
+            "form": "saimeno"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 139,
+        "form": "kilem"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "表現"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 135,
+            "form": "kilemma"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 140,
+        "form": "malos"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "年"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 124,
+            "form": "selovfon"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 141,
+        "form": "hoft"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "空気"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 15,
+            "form": "matonakt"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 142,
+        "form": "sainem"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "空"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 38,
+            "form": "fenant"
+          }
+        },
+        {
+          "title": "下位語",
+          "entry": {
+            "id": 143,
+            "form": "selenem"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 143,
+        "form": "selenem"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "星空"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 142,
+            "form": "sainem"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 144,
+        "form": "kant"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "ここ"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 38,
+            "form": "fenant"
+          }
+        }
+      ]
+    },
+    {
+      "entry": {
+        "id": 145,
+        "form": "cotaltces"
+      },
+      "translations": [
+        {
+          "title": "概念",
+          "forms": [
+            "レストラン"
+          ]
+        }
+      ],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "relations": [
+        {
+          "title": "上位語",
+          "entry": {
+            "id": 88,
+            "form": "cotent"
+          }
+        }
+      ]
     }
   ],
   "zpdic": {

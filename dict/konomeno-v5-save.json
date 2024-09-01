@@ -2,37 +2,1619 @@
   "0": {
     "entry": "[概念]",
     "children": [
-      4
+      6
     ],
     "tags": [],
     "contents": []
   },
   "1": {
     "entry": "[関係]",
-    "children": [],
+    "children": [
+      40,
+      120
+    ],
     "tags": [],
     "contents": []
   },
   "2": {
-    "entry": "[パラメータ演算子]",
-    "children": [],
+    "entry": "[高階関係]",
+    "children": [
+      115,
+      116,
+      114
+    ],
     "tags": [],
     "contents": []
   },
   "3": {
+    "entry": "[パラメータ演算子]",
+    "children": [
+      7,
+      28
+    ],
+    "tags": [],
+    "contents": []
+  },
+  "4": {
     "entry": "[音節]",
     "children": [],
     "tags": [],
     "contents": []
   },
-  "4": {
+  "5": {
+    "entry": "[慣用表現]",
+    "children": [
+      41
+    ],
+    "tags": [],
+    "contents": []
+  },
+  "6": {
     "entry": "alkono",
     "translations": [
       "概念"
     ],
     "parent": 0,
+    "children": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "7": {
+    "entry": "san",
+    "translations": [
+      "全ての"
+    ],
+    "tags": [],
+    "parent": 3,
+    "contents": [],
+    "variations": []
+  },
+  "8": {
+    "entry": "panhac",
+    "translations": [
+      "広義持続物"
+    ],
+    "parent": 6,
+    "children": [
+      12,
+      13
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "9": {
+    "entry": "astav",
+    "translations": [
+      "生起物"
+    ],
+    "parent": 6,
+    "children": [
+      104,
+      106
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "10": {
+    "entry": "selovna",
+    "translations": [
+      "時間関連"
+    ],
+    "parent": 6,
     "children": [],
     "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "11": {
+    "entry": "loka",
+    "translations": [
+      "抽象物"
+    ],
+    "parent": 6,
+    "children": [
+      59,
+      100
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "12": {
+    "entry": "nato",
+    "translations": [
+      "持続物"
+    ],
+    "parent": 8,
+    "children": [
+      14,
+      15
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "13": {
+    "entry": "aicis",
+    "translations": [
+      "従属物"
+    ],
+    "parent": 8,
+    "children": [
+      32,
+      33,
+      34
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "14": {
+    "entry": "noflem",
+    "translations": [
+      "統合体"
+    ],
+    "parent": 12,
+    "children": [
+      16,
+      17
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "15": {
+    "entry": "matonakt",
+    "translations": [
+      "定量物質"
+    ],
+    "parent": 12,
+    "children": [
+      42,
+      43,
+      105
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "16": {
+    "entry": "santakto",
+    "translations": [
+      "広義オブジェクト"
+    ],
+    "parent": 14,
+    "children": [
+      18,
+      19
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "17": {
+    "entry": "klant",
+    "translations": [
+      "集合体"
+    ],
+    "parent": 14,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "18": {
+    "entry": "takto",
+    "translations": [
+      "オブジェクト"
+    ],
+    "parent": 16,
+    "children": [
+      20,
+      21
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "19": {
+    "entry": "kommaton",
+    "translations": [
+      "単位物質"
+    ],
+    "parent": 16,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "20": {
+    "entry": "kaeno",
+    "translations": [
+      "エージェント"
+    ],
+    "parent": 18,
+    "children": [
+      22,
+      23
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "21": {
+    "entry": "kinano",
+    "translations": [
+      "機能物"
+    ],
+    "parent": 18,
+    "children": [
+      24,
+      25
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "22": {
+    "entry": "konkaeno",
+    "translations": [
+      "単一エージェント"
+    ],
+    "parent": 20,
+    "children": [
+      47
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "23": {
+    "entry": "calfkaeno",
+    "translations": [
+      "複合エージェント"
+    ],
+    "parent": 20,
+    "children": [
+      87,
+      88
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "24": {
+    "entry": "kines",
+    "translations": [
+      "人工物"
+    ],
+    "parent": 21,
+    "children": [
+      26,
+      27
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "25": {
+    "entry": "novzmi",
+    "translations": [
+      "生体部品"
+    ],
+    "parent": 21,
+    "children": [
+      51,
+      52
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "26": {
+    "entry": "kilemkto",
+    "translations": [
+      "表現物"
+    ],
+    "parent": 24,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "27": {
+    "entry": "latakto",
+    "translations": [
+      "非表現物"
+    ],
+    "parent": 24,
+    "children": [
+      75,
+      76,
+      77,
+      78,
+      80
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "28": {
+    "entry": "kon",
+    "translations": [
+      "ある何かの"
+    ],
+    "tags": [],
+    "parent": 3,
+    "contents": [],
+    "variations": []
+  },
+  "29": {
+    "entry": "hanov",
+    "translations": [
+      "部分性関係",
+      "部分-全体関係",
+      "x1はx2の物理的部分である"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      15,
+      15
+    ],
+    "contents": [],
+    "variations": [],
+    "function": 0
+  },
+  "30": {
+    "entry": "hanem",
+    "translations": [
+      "構成員関係",
+      "構成員-集合体関係",
+      "x1はx2の構成員である"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      14,
+      17
+    ],
+    "contents": [],
+    "variations": [],
+    "function": 0
+  },
+  "31": {
+    "entry": "litam",
+    "translations": [
+      "内部関係",
+      "内部-全体関係",
+      "x1はx2の中にある"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      14,
+      16
+    ],
+    "contents": [],
+    "variations": [],
+    "function": 0
+  },
+  "32": {
+    "entry": "latent",
+    "translations": [
+      "量"
+    ],
+    "parent": 13,
+    "children": [
+      35,
+      36
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "33": {
+    "entry": "canon",
+    "translations": [
+      "性質"
+    ],
+    "parent": 13,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "34": {
+    "entry": "haikant",
+    "translations": [
+      "特徴"
+    ],
+    "parent": 13,
+    "children": [
+      37,
+      38
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "35": {
+    "entry": "nosnant",
+    "translations": [
+      "定性的量"
+    ],
+    "parent": 32,
+    "children": [
+      93
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "36": {
+    "entry": "lekostent",
+    "translations": [
+      "定量的量"
+    ],
+    "parent": 32,
+    "children": [
+      56
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "37": {
+    "entry": "lolokac",
+    "translations": [
+      "パターン"
+    ],
+    "parent": 34,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "38": {
+    "entry": "fenant",
+    "translations": [
+      "領域"
+    ],
+    "parent": 34,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "39": {
+    "entry": "saitona",
+    "translations": [
+      "こんにちは"
+    ],
+    "parent": 5,
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "40": {
+    "entry": "aitos",
+    "translations": [
+      "2項関係"
+    ],
+    "parent": 1,
+    "children": [
+      29,
+      30,
+      31,
+      44,
+      45,
+      46,
+      54,
+      92,
+      95,
+      94,
+      96,
+      97,
+      98,
+      99,
+      103,
+      91,
+      118,
+      113
+    ],
+    "tags": [],
+    "arguments": [
+      6,
+      6
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "41": {
+    "entry": "saitona",
+    "translations": [
+      "こんにちは"
+    ],
+    "parent": 5,
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "42": {
+    "entry": "kelen",
+    "translations": [
+      "ガラス"
+    ],
+    "parent": 15,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "43": {
+    "entry": "kisa",
+    "translations": [
+      "水"
+    ],
+    "parent": 15,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "44": {
+    "entry": "造語待ち",
+    "translations": [
+      "助数詞"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      15,
+      19
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "45": {
+    "entry": "liimes",
+    "translations": [
+      "順序関係",
+      "小-大関係"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      6,
+      6
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "46": {
+    "entry": "sammes",
+    "translations": [
+      "降順の順序関係",
+      "大-小関係"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      6,
+      6
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "47": {
+    "entry": "halov",
+    "translations": [
+      "生物"
+    ],
+    "parent": 22,
+    "children": [
+      48,
+      49
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "48": {
+    "entry": "kwaflaim",
+    "translations": [
+      "植物"
+    ],
+    "parent": 47,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "49": {
+    "entry": "bafnol",
+    "translations": [
+      "動物"
+    ],
+    "parent": 47,
+    "children": [
+      50,
+      89
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "50": {
+    "entry": "coto",
+    "translations": [
+      "人"
+    ],
+    "parent": 49,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "51": {
+    "entry": "bafnant",
+    "translations": [
+      "動物部分"
+    ],
+    "parent": 25,
+    "children": [
+      70
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "52": {
+    "entry": "kwafnant",
+    "translations": [
+      "植物部分"
+    ],
+    "parent": 25,
+    "children": [
+      53
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "53": {
+    "entry": "nome",
+    "translations": [
+      "果実",
+      "果物"
+    ],
+    "parent": 52,
+    "children": [
+      69,
+      73,
+      74
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "54": {
+    "entry": "ansa",
+    "translations": [
+      "内在関係",
+      "x2はx1を持つ",
+      "x1はx2に内在する"
+    ],
+    "parent": 40,
+    "children": [
+      55
+    ],
+    "tags": [],
+    "arguments": [
+      36,
+      12
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "55": {
+    "entry": "stoitlis",
+    "translations": [
+      "長さ",
+      "x2の長さはx1である"
+    ],
+    "parent": 54,
+    "children": [
+      57
+    ],
+    "tags": [],
+    "arguments": [
+      56,
+      12
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "56": {
+    "entry": "stoit",
+    "translations": [
+      "長さ量"
+    ],
+    "parent": 36,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "57": {
+    "entry": "motoilis",
+    "translations": [
+      "高さ",
+      "x2の高さはx1である"
+    ],
+    "parent": 55,
+    "children": [
+      58
+    ],
+    "tags": [],
+    "arguments": [
+      56,
+      12
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "58": {
+    "entry": "stalmota",
+    "translations": [
+      "身長",
+      "x2の身長はx1である"
+    ],
+    "parent": 57,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      56,
+      50
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "59": {
+    "entry": "fonne",
+    "translations": [
+      "集合",
+      "数学的対象"
+    ],
+    "parent": 11,
+    "children": [
+      60
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "60": {
+    "entry": "laccen",
+    "translations": [
+      "数"
+    ],
+    "parent": 59,
+    "children": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "61": {
+    "entry": "mistakk",
+    "translations": [
+      "自然数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "62": {
+    "entry": "stakk",
+    "translations": [
+      "整数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "63": {
+    "entry": "flakk",
+    "translations": [
+      "有理数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "64": {
+    "entry": "tolas",
+    "translations": [
+      "実数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "65": {
+    "entry": "klanlas",
+    "translations": [
+      "複素数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "66": {
+    "entry": "listakk",
+    "translations": [
+      "順序数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "67": {
+    "entry": "tostakk",
+    "translations": [
+      "基数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "68": {
+    "entry": "helas",
+    "translations": [
+      "二重数"
+    ],
+    "parent": 60,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "69": {
+    "entry": "kalam",
+    "translations": [
+      "りんご"
+    ],
+    "parent": 53,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "70": {
+    "entry": "motonant",
+    "translations": [
+      "人体"
+    ],
+    "parent": 51,
+    "children": [
+      71,
+      72
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "71": {
+    "entry": "macylam",
+    "translations": [
+      "筋肉"
+    ],
+    "parent": 70,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "72": {
+    "entry": "mysto",
+    "translations": [
+      "骨"
+    ],
+    "parent": 70,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "73": {
+    "entry": "mikam",
+    "translations": [
+      "みかん"
+    ],
+    "parent": 53,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "74": {
+    "entry": "lamynom",
+    "translations": [
+      "さくらんぼ"
+    ],
+    "parent": 53,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "75": {
+    "entry": "suiston",
+    "translations": [
+      "文房具"
+    ],
+    "parent": 27,
+    "children": [
+      81,
+      82,
+      83,
+      84
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "76": {
+    "entry": "laitces",
+    "translations": [
+      "乗り物"
+    ],
+    "parent": 27,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "77": {
+    "entry": "mosto",
+    "translations": [
+      "建物"
+    ],
+    "parent": 27,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "78": {
+    "entry": "melisbon",
+    "translations": [
+      "服装"
+    ],
+    "parent": 27,
+    "children": [
+      79
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "79": {
+    "entry": "falsa",
+    "translations": [
+      "ズボン"
+    ],
+    "parent": 78,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "80": {
+    "entry": "folka",
+    "translations": [
+      "容器"
+    ],
+    "parent": 27,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "81": {
+    "entry": "suinof",
+    "translations": [
+      "ノート"
+    ],
+    "parent": 75,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "82": {
+    "entry": "litof",
+    "translations": [
+      "鉛筆",
+      "ペン"
+    ],
+    "parent": 75,
+    "children": [
+      85,
+      86
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "83": {
+    "entry": "mokos",
+    "translations": [
+      "消しゴム"
+    ],
+    "parent": 75,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "84": {
+    "entry": "stoesuy",
+    "translations": [
+      "定規"
+    ],
+    "parent": 75,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "85": {
+    "entry": "flalif",
+    "translations": [
+      "羽ペン"
+    ],
+    "parent": 82,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "86": {
+    "entry": "kelenlif",
+    "translations": [
+      "ガラスペン"
+    ],
+    "parent": 82,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "87": {
+    "entry": "kuistent",
+    "translations": [
+      "学校"
+    ],
+    "parent": 23,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "88": {
+    "entry": "cotent",
+    "translations": [
+      "店"
+    ],
+    "parent": 23,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "89": {
+    "entry": "meacc",
+    "translations": [
+      "猫"
+    ],
+    "parent": 49,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "90": {
+    "entry": "kuistnac",
+    "translations": [
+      "学生",
+      "x2はx1の学生である"
+    ],
+    "parent": 91,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      87,
+      50
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "91": {
+    "entry": "造語待ち",
+    "translations": [
+      "ロール関係",
+      "コンテキスト-プレイヤー関係"
+    ],
+    "parent": 40,
+    "children": [
+      90,
+      119
+    ],
+    "tags": [],
+    "arguments": [
+      6,
+      6
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "92": {
+    "entry": "koplis",
+    "translations": [
+      "中身-容器関係",
+      "x1はx2の中身である"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      6,
+      80
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "93": {
+    "entry": "kanowa",
+    "translations": [
+      "可愛い",
+      "尊い"
+    ],
+    "parent": 35,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "94": {
+    "entry": "lofna",
+    "translations": [
+      "形容関係",
+      "x2はx1を持つ"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      35,
+      33
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "95": {
+    "entry": "noccea",
+    "translations": [
+      "物-性質関係"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      12,
+      33
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "96": {
+    "entry": "nila",
+    "translations": [
+      "定量的量-性質関係"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      35,
+      33
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "97": {
+    "entry": "nilof",
+    "translations": [
+      "定性的量-性質関係"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      35,
+      33
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "98": {
+    "entry": "noclof",
+    "translations": [
+      "性質-性質関係"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      33,
+      33
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "99": {
+    "entry": "fetam",
+    "translations": [
+      "間内部関係",
+      "間内部-全体関係",
+      "x1はx2の中にある"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      14,
+      17
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "100": {
+    "entry": "haik",
+    "translations": [
+      "形"
+    ],
+    "parent": 11,
+    "children": [
+      101
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "101": {
+    "entry": "suylis",
+    "translations": [
+      "文字",
+      "サイン",
+      "標識"
+    ],
+    "parent": 100,
+    "children": [
+      102
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "102": {
+    "entry": "maliitasuy",
+    "translations": [
+      "マリータスユ"
+    ],
+    "parent": 101,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "103": {
+    "entry": "lihaik",
+    "translations": [
+      "形状関係",
+      "x2の形はx1である"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      100,
+      8
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "104": {
+    "entry": "sankonstav",
+    "translations": [
+      "広義状態"
+    ],
+    "parent": 9,
+    "children": [
+      109,
+      110
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "105": {
+    "entry": "magnom",
+    "translations": [
+      "牛乳"
+    ],
+    "parent": 15,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "106": {
+    "entry": "sankalastav",
+    "translations": [
+      "イベント"
+    ],
+    "parent": 9,
+    "children": [
+      107,
+      108
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "107": {
+    "entry": "kalastav",
+    "translations": [
+      "完遂"
+    ],
+    "parent": 106,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "108": {
+    "entry": "milistav",
+    "translations": [
+      "達成"
+    ],
+    "parent": 106,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "109": {
+    "entry": "konstav",
+    "translations": [
+      "状態"
+    ],
+    "parent": 104,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "110": {
+    "entry": "saistav",
+    "translations": [
+      "プロセス"
+    ],
+    "parent": 104,
+    "children": [
+      111,
+      112
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "111": {
+    "entry": "flanov",
+    "translations": [
+      "集合プロセス"
+    ],
+    "parent": 110,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "112": {
+    "entry": "kosaistav",
+    "translations": [
+      "単一プロセス"
+    ],
+    "parent": 110,
+    "children": [
+      117
+    ],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "113": {
+    "entry": "hanimist",
+    "translations": [
+      "生起物の構成員関係"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      108,
+      111
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "114": {
+    "entry": "metokist",
+    "translations": [
+      "引き下げ関係"
+    ],
+    "parent": 2,
+    "tags": [],
+    "arguments": [
+      116,
+      116
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "115": {
+    "entry": "konofon",
+    "translations": [
+      "概念クラス"
+    ],
+    "parent": 2,
+    "tags": [],
+    "arguments": [],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "116": {
+    "entry": "tosfon",
+    "translations": [
+      "関係クラス"
+    ],
+    "parent": 2,
+    "tags": [],
+    "arguments": [],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "117": {
+    "entry": "liskono",
+    "translations": [
+      "変化行為"
+    ],
+    "parent": 112,
+    "children": [],
+    "tags": [],
+    "contents": [],
+    "variations": []
+  },
+  "118": {
+    "entry": "tov",
+    "translations": [
+      "所在関係",
+      "x1はx2にある"
+    ],
+    "parent": 40,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      12,
+      34
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "119": {
+    "entry": "antalto",
+    "translations": [
+      "友達",
+      "x2はx1の友達である"
+    ],
+    "parent": 91,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      50,
+      50
+    ],
+    "function": 0,
+    "contents": [],
+    "variations": []
+  },
+  "120": {
+    "entry": "luitos",
+    "translations": [
+      "3項関係"
+    ],
+    "parent": 1,
+    "children": [],
+    "tags": [],
+    "arguments": [
+      6,
+      6,
+      6
+    ],
+    "function": 0,
     "contents": [],
     "variations": []
   }

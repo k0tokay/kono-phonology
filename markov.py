@@ -43,7 +43,7 @@ for _ in range(500):
         next = np.random.choice(X, p=A[tail])
         w.append(next)
     w = Word("".join(w[N-1:-1]))
-    if w.is_valid and len(w.ph) >= 4 and w.text not in data["words"]:
+    if w.is_valid and len(w.ph) >= 4 and w.text not in data["words"]["entry"]["form"]:
         generated.append(w.text)
 
 generated = list(set(generated)) # 一意化
