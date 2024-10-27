@@ -12,6 +12,8 @@ with open(dict_path) as f:
 with open(dict_save_path, "w") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
+words = data["words"]
+
 # メインウィンドウの作成
 root = tk.Tk()
 root.title("Dictionary Editor")
@@ -30,8 +32,32 @@ tree.heading("translations", text="翻訳", anchor="w")
 
 tree.column("id", width=30, stretch=True)
 
-fields = [
-    [
+inv = lambda L: {x: i for i, x in enumerate(L)}
+inv_map = lambda L: lambda S: [i for i, x in enumerate(L) if x in S]
+categories = {
+    "name": [
+        "catetgory",
+        "concept",
+        "relation",
+        "HO_relation",
+        "parametric_operator",
+        "syllable",
+        "idiom"
+    ],
+    "title": [
+        "カテゴリ",
+        "概念",
+        "関係",
+        "高階関係",
+        "パラメータ演算子",
+        "音節",
+        "慣用表現"
+    ]
+}
+cat2i = inv(categories["title"])
+cat2i_map = inv_map(categories["title"])
+attrs = {
+    "name": [
         "entry",
         "id",
         "translations",
@@ -39,8 +65,10 @@ fields = [
         "children",
         "tags",
         "arguments",
-        "function"
-    ], [
+        "is_function",
+        "is_instance"
+    ],
+    "title": [
         "単語",
         "ID",
         "翻訳",
@@ -48,8 +76,10 @@ fields = [
         "下位語",
         "タグ",
         "項",
-        "関数"
-    ], [
+        "関数",
+        "実例"
+    ], 
+    "is_valid": [
         [True, True, True, True, True, True, True],
         [True, True, True, True, True, True, True],
         [False, True, True, True, True, True, True],
@@ -58,45 +88,60 @@ fields = [
         [True, True, True, True, True, True, True],
         [False, False, True, True, False, False, False],
         [False, False, True, True, False, False, False],
-    ], [
-        lambda id: data[str(id)]["entry"],
-        lambda id: str(id),
-        lambda id: "，".join(data[str(id)]["translations"]) if "translations" in data[str(id)] else "",
-        lambda id: str(data[str(id)]["parent"]) if "parent" in data[str(id)] else "",
-        lambda id: "，".join(map(str, data[str(id)]["children"])) if "children" in data[str(id)] else "",
-        lambda id: "，".join(data[str(id)]["tags"]) if "tags" in data[str(id)] else "",
-        lambda id: "，".join(map(str, data[str(id)]["arguments"])) if "arguments" in data[str(id)] else "",
-        lambda id: str(data[str(id)]["function"])
-    ], [
+        [False, True, False, False, False, False, False]
+    ], 
+    "display": [
+        lambda id: words[id]["entry"],
+        lambda id: id,
+        lambda id: "，".join(words[id]["translations"]),
+        lambda id: words[id]["parent"] if words[id]["parent"] != None else "",
+        lambda id: "，".join(map(str, words[id]["children"])),
+        lambda id: "，".join(words[id]["tags"]),
+        lambda id: "，".join(map(str, words[id]["arguments"])),
+        lambda id: words[id]["is_function"],
+        lambda id: words[id]["is_instance"]
+    ],
+    "parse": [
         lambda text: text,
-        lambda text: -1 if text == "" else int(text),
+        lambda text: None if text == "" else int(text),
         lambda text: [] if text == "" else text.split("，"),
-        lambda text: -1 if text == "" else int(text),
+        lambda text: None if text == "" else int(text),
         lambda text: [] if text == "" else list(map(int, text.split("，"))),
         lambda text: [] if text == "" else text.split("，"),
         lambda text: [] if text == "" else list(map(int, text.split("，"))),
+        lambda text: 0 if text == "" else int(text),
         lambda text: 0 if text == "" else int(text)
-    ], [
+    ], 
+    "editable": [
         True,
         False,
         True,
         True,
         False,
+        True,
         True,
         True,
         True
     ]
-]
+}
+attr2i = inv(attrs["name"])
+attr2i_map = inv_map(attrs["name"])
 
 def insert_items(parent, id):
-    node = tree.insert(parent, 'end', text=fields[3][0](id), values=(fields[3][1](id), fields[3][2](id)))
-    if "children" in data[str(id)]:
-        for id in data[str(id)]['children']:
+    idxs = attr2i_map(["id", "entry", "translations"])
+    f = lambda i: attrs["display"][idxs[i]](id)
+    node = tree.insert(parent, 'end', text=f(0), values=(f(1), f(2)))
+    if "children" in words[id]:
+        for id in words[id]['children']:
             insert_items(node, id)
 
-c_num = 6
-for id in range(c_num):
-    insert_items("", id)
+cat2wi = {w["entry"]: w["id"] for w in words if w != None and w["category"] == "カテゴリ"}
+cat2wi["カテゴリ"] = None
+cat2wi_map = lambda S: {w: i for w, i in cat2wi.items() if w in S}
+for cat, i in cat2wi.items():
+    if i == None:
+        continue
+    insert_items("", i)
 
 window.add(tree, stretch="always")
 
@@ -117,16 +162,6 @@ def getitem(id):
             return node
         todo += tree.get_children(node)
 
-def category(id):
-    if id < c_num:
-        return -1
-    else:
-        pid = data[str(id)]["parent"]
-        if pid < c_num:
-            return pid
-        else:
-            return category(pid)
-
 # フレーム
 main_frame = tk.Frame(window)
 window.add(main_frame, stretch="always")
@@ -139,8 +174,8 @@ def search_window(frame, result_frame=None):
     frame_1 = tk.Frame(frame)
     frame_1.pack()
     entries = []
-    for i in [0, 1, 2]:
-        tk.Label(frame_1, text=fields[1][i]).grid(row=i, column=0, padx=10, pady=10, sticky="w")
+    for i in attr2i_map(["id","entry","translations"]):
+        tk.Label(frame_1, text=attrs["title"][i]).grid(row=i, column=0, padx=10, pady=10, sticky="w")
         entries.append(tk.Entry(frame_1))
         entries[i].grid(row=i, column=1, padx=10, pady=10, sticky="ew")
     search_button = tk.Button(frame, text="検索", command=lambda: search_element(entries, result_frame))
@@ -148,18 +183,18 @@ def search_window(frame, result_frame=None):
 
 # 検索
 def search_element(entries, frame):
-    id = entries[1].get()
+    id = entries[attr2i["id"]].get()
     if id == "":
-        result = data.copy()
-    elif id in data:
-        result = {id : data[id]}
+        result = words.copy()
+    elif id in words:
+        result = [words[id]]
     else:
-        result = {}
-    for i in [0, 2]:
+        result = []
+    for i in attr2i_map(["entry", "translations"]):
         text = entries[i].get()
         if text == "":
             continue
-        result = {id: result[id] for id in result if fields[3][i](id).find(text) != -1}
+        result = [result[id] for id, w in enumerate(result) if w != None and attrs["display"][i](id).find(text) != -1]
     search_result_window(frame, result)
 
 # 検索結果画面
@@ -172,9 +207,9 @@ def search_result_window(frame, result):
         for widget in frame.winfo_children():
             widget.destroy()
     
-    for id, r in result.items():
-        text = f'{r["entry"]}, {id}, {r["translations"][0]}'
-        button = tk.Button(frame, text=text, command=lambda: select_item(getitem(int(id))))
+    for r in result:
+        text = f'{r["entry"]}, {r["id"]}, {r["translations"][0]}'
+        button = tk.Button(frame, text=text, command=lambda: select_item(getitem(r["id"])))
         button.pack(fill=tk.X)
 
 search_window(main_frame)
@@ -187,17 +222,17 @@ def detail_window(frame, id):
     frame_1 = tk.Frame(frame)
     frame_1.pack()
     entries = {}
-    for i in range(len(fields[0])):
-        if not fields[2][i][category(id)+1]:
+    for i in range(len(attrs["name"])):
+        if not attrs["is_valid"][i][cat2i[words[id]["category"]]]:
             continue
         j = len(entries)
-        tk.Label(frame_1, text=fields[1][i]).grid(row=j, column=0, padx=10, pady=10, sticky="w")
-        var = tk.StringVar(value=fields[3][i](id))
-        entries[str(i)] = tk.Entry(frame_1, textvariable=var)
-        entries[str(i)].grid(row=j, column=1, padx=10, pady=10, sticky="ew")
+        tk.Label(frame_1, text=attrs["title"][i]).grid(row=j, column=0, padx=10, pady=10, sticky="w")
+        var = tk.StringVar(value=attrs["display"][i](id))
+        entries[i] = tk.Entry(frame_1, textvariable=var)
+        entries[i].grid(row=j, column=1, padx=10, pady=10, sticky="ew")
 
-        if not fields[5][i]: # 編集不能にする属性
-            entries[str(i)].config(state='readonly')
+        if not attrs["editable"][i]: # 編集不能にする属性
+            entries[i].config(state='readonly')
     content_frame = tk.Frame(frame)
     content_frame.pack()
 
@@ -208,50 +243,71 @@ def detail_window(frame, id):
 
 # 追加
 def add_element(parent):
-    id = max([int(id) for id in data]) + 1
+    id = len(words)
     pid = getid(parent)
-    new_element = {}
-    c = category(pid)
+    wordTemplate = {
+      "id": None,
+      "entry": "",
+      "category": "",
+      "translations": [],
+      "simple_translations": [],
+      "parent": None,
+      "children": [],
+      "arguments": [],
+      "tags": [],
+      "contents": [],
+      "variations": [],
+      "is_function": None,
+      "is_instance": None
+    }
+    new_element = wordTemplate
+    new_element["id"] = id
+    c = cat2wi[words[id]["caterogy"]]
     c = pid if c == -1 else c
-    for i in range(len(fields[0])):
-        if fields[2][i][c+1] and i != 1:
-            new_element[fields[0][i]] = fields[4][i]("")
+    # for i in range(len(attrs["name"])):
+    #     if attrs["is_valid"][i][c+1] and i != 1:
+    #         new_element[attrs["name"][i]] = attrs["parse"][i]("")
     new_element["parent"] = pid
-    new_element["contents"] = []
-    new_element["variations"] = []
+    def cat_rec(id):
+        pid = words[id]["parent"]
+        if pid ==  None:
+            return words[pid]["category"]
+        else:
+            return cat_rec(pid)
+    new_element["category"] = cat_rec(pid)
     # ポップアップを出す
     popup = tk.Toplevel(root)
     popup.title("要素の追加")
     entries = {}
-    for i in [0, 2, 5, 6]:
-        if fields[2][i][c+1]:
+    for i in attr2i_map(["entry", "translations", "tags", "arguements"]):
+        if attrs["is_valid"][i][c+1]:
             j = len(entries)
-            tk.Label(popup, text=fields[1][i]).grid(row=j, column=0, padx=10, pady=10, sticky="e")
-            entries[str(i)] = tk.Entry(popup)
-            entries[str(i)].grid(row=j, column=1, padx=10, pady=10)
+            tk.Label(popup, text=attrs["title"][i]).grid(row=j, column=0, padx=10, pady=10, sticky="e")
+            entries[i] = tk.Entry(popup)
+            entries[i].grid(row=j, column=1, padx=10, pady=10)
     
-    def save_data():
-        for i in [0, 2, 5, 6]:
-            if fields[2][i][c+1]:
-                new_element[fields[0][i]] = fields[4][i](entries[str(i)].get())
+    def save_words():
+        for i in attr2i_map(["entry", "translations", "tags", "arguements"]):
+            if attrs["is_valid"][i][c+1]:
+                new_element[attrs["name"][i]] = attrs["parse"][i](entries[i].get())
 
-        data[str(id)] = new_element
-        data[str(pid)]["children"].append(id)
+        words.append(new_element.copy())
+        words[pid]["children"].append(id)
         insert_items(parent, id)
 
         popup.destroy()
     
-    tk.Button(popup, text="OK", command=save_data).grid(row=len(entries), columnspan=2, pady=10)
+    tk.Button(popup, text="OK", command=save_words).grid(row=len(entries), columnspan=2, pady=10)
     popup.geometry("300x300")
 
 # 削除
 def delete_element(node):
     id = getid(node)
-    pid = data[str(id)]["parent"]
-    data[str(pid)]["children"].remove(id)
-    if "children" not in data[str(id)]:
+    pid = words[id]["parent"]
+    words[pid]["children"].remove(id)
+    if "children" not in words[id]:
         tree.delete(node)
-        data.pop(str(id))
+        words.pop(id)
         return
     # ポップアップを出す
     popup = tk.Toplevel(root)
@@ -259,18 +315,19 @@ def delete_element(node):
     tk.Label(popup, text="子の新しい親").grid(row=0, column=0, padx=10, pady=10, sticky="e")
     entry = tk.Entry(popup)
     entry.grid(row=0, column=1, padx=10, pady=10)
-    def save_data():
-        new_pid = int(entry.get())
-        if str(new_pid) in data:
-            for cid in data[str(id)]["children"]:
-                data[str(cid)]["parent"] = new_pid
-                data[str(new_pid)]["children"].append(cid)
+    def save_words():
+        new_pid = entry.get()
+        if new_pid != "" and new_pid in words:
+            new_pid = int(new_pid)
+            for cid in words[id]["children"]:
+                words[cid]["parent"] = new_pid
+                words[new_pid]["children"].append(cid)
                 insert_items(getitem(pid), cid)
         tree.delete(*tree.get_children(node))
         tree.delete(node)
-        data.pop(str(id))
+        words.pop(id)
         popup.destroy()
-    tk.Button(popup, text="OK", command=save_data).grid(row=3, columnspan=2, pady=10)
+    tk.Button(popup, text="OK", command=save_words).grid(row=3, columnspan=2, pady=10)
 
 
 def on_tree_select(event):
@@ -282,21 +339,20 @@ tree.bind('<<TreeviewSelect>>', on_tree_select)
 
 # 編集
 def edit_element(entries):
-    id = int(entries["1"].get())
+    id = int(entries[attr2i["id"]].get())
     item = getitem(id)
     for i in entries:
         text = entries[i].get()
-        if i == "3":
-            pid = data[str(id)]["parent"]
+        if i == 3:
+            pid = words[id]["parent"]
             new_pid = int(text)
-            data[str(pid)]["children"].remove(id)
-            data[str(new_pid)]["children"].append(id)
+            words[pid]["children"].remove(id)
+            words[new_pid]["children"].append(id)
         if i != "1":
-            data[str(id)][fields[0][int(i)]] = fields[4][int(i)](text)
+            words[id][attrs["name"][int(i)]] = attrs["parse"][int(i)](text)
     tree.delete(*tree.get_children(item))
     tree.delete(item)
     insert_items(getitem(new_pid), id)
-    # tree.item(item, text=entries["0"].get(), values=(entries["1"].get(), entries["2"].get() if "2" in entries else ""))
 
 # ダブルクリックで編集
 # def edit_on_click(event):
@@ -315,13 +371,14 @@ tree.bind("<Button-2>", create_context_menu)
 tree.bind("<Button-3>", create_context_menu)
 
 # 保存
-def save_data(event=None):
+def save_words(event=None):
     with open(dict_path, 'w') as f:
+        data["words"] = words
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 # 保存ショートカット
-root.bind("<Command-s>", save_data)
-root.bind("<Control-s>", save_data)
+root.bind("<Command-s>", save_words)
+root.bind("<Control-s>", save_words)
 
 # 検索ショートカット
 root.bind("<Command-f>", lambda event: search_window(main_frame))
@@ -336,6 +393,7 @@ def to_zpdic():
     # https://zpdic.ziphil.com/document/other/json-spec
     zpdic = {
         "words" : [],
+        "examples": data["examples"],
         "zpdic" : {
             "punctuations" : [",","、","，"],
             "pronunciationTitle" : "Pronunciation"},
@@ -343,41 +401,51 @@ def to_zpdic():
         },
         "version" : 2
     }
-    words = []
+    zpdic_words = []
     id_form = lambda id: {
         "id": id,
-        "form": data[str(id)]["entry"]
+        "form": words[id]["entry"]
     }
-    for id, w in data.items():
-        id = int(id)
-        if id < c_num:
+    for id, w in enumerate(words):
+        if id in cat2wi_map(categories["title"]):
             continue
-        word = {}
-        word["entry"] = id_form(id)
-        word["translations"] = [{ 
-            "title" : data[str(category(id))]["entry"][1:-1],
+        if w == None:
+            continue
+        zpdic_w = {}
+        zpdic_w["entry"] = id_form(id)
+        c = cat2wi[words[id]["category"]]
+        if c == 0 and w["is_instance"] == 1:
+            title = "実例" 
+        elif c == 1 and w["is_function"] == 1:
+            title = "関数"
+        elif c == None:
+            title = "カテゴリ"
+        else:
+            title = words[c]["entry"]
+        zpdic_w["translations"] = [{ 
+            "title" : title,
             "forms": w["translations"]
         }]
-        word["tags"] = w["tags"]
-        word["contents"] = w["contents"]
-        word["variations"] = w["variations"]
-        word["relations"] = []
+        zpdic_w["tags"] = w["tags"]
+        zpdic_w["contents"] = w["contents"]
+        zpdic_w["variations"] = w["variations"]
+        zpdic_w["relations"] = []
         pid = w["parent"]
-        if pid >= c_num:
+        if pid != None and pid not in cat2wi_map(categories["title"]):
             r = {
                 "title": "上位語",
                 "entry": id_form(pid)
             }
-            word["relations"].append(r)
+            zpdic_w["relations"].append(r)
         if "children" in w:
             for cid in w["children"]:
                 r = {
                     "title": "下位語",
                     "entry": id_form(cid)
                 }
-                word["relations"].append(r)
+                zpdic_w["relations"].append(r)
         if "arguments" in w:
-            if w["function"] == 1:
+            if w["is_function"] == 1:
                 w_arg = w["arguments"][:-1]
             else:
                 w_arg = w["arguments"]
@@ -386,15 +454,15 @@ def to_zpdic():
                     "title": f"第{i+1}項",
                     "entry": id_form(aid)
                 }
-                word["relations"].append(r)
-            if w["function"] == 1:
+                zpdic_w["relations"].append(r)
+            if w["is_function"] == 1:
                 r = {
                     "title": "出力",
                     "entry": id_form(w["arguments"][-1])
                 }
-                word["relations"].append(r)
-        words.append(word)
-    zpdic["words"] = words
+                zpdic_w["relations"].append(r)
+        zpdic_words.append(zpdic_w)
+    zpdic["words"] = zpdic_words
     return zpdic
 
 with open(dict_zpdic_path, "w") as f:
